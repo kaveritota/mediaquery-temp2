@@ -1,0 +1,100 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+ 
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px;
+    margin-bottom:10px ;
+    box-shadow: 2px 2px 2px 2px grey;  
+}
+.contact{
+    background-color: darkorange;
+    padding:10px;
+}
+.icon{
+    display:none;
+}
+     
+#check{
+    display:none ;
+}
+#check:checked+nav{
+    background-color:lightcoral ;
+    position:absolute;
+    display:flex;
+    flex-direction: column;
+    width:100%;
+
+}
+nav a{
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+nav{
+    display:flex;
+    gap:60px;
+}
+a:hover{
+    background-color: darkorange;
+    padding:10px;
+}
+.main-container{
+    background-image:url("https://theearlychildhoodacademy.com/wp-content/uploads/baby-playing-768x576.jpg") ;
+    background-repeat:no-repeat ;
+    background-size: cover;
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    height:100vh;
+    /*font-size:32px ;*/
+}
+.image2{
+    width:100%;
+}
+
+.container{  
+    position: absolute;
+    top:70%;
+    left:70%;
+    transform: translate(-80%,-80%);
+    border-radius:10%;  
+    background-color: aliceblue; 
+    text-align:center; 
+    display:flex;
+    flex-direction:column;
+    justify-content:center ;
+    align-items:center ;
+    gap:20px;   
+    padding:30px; 
+}
+h1{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+}
+.order{
+    background-color:darkorange;
+    border-radius:10% ;  
+    /*font-size:22px ;*/
+    padding:20px;
+    text-align: center; 
+}
+.order:hover{
+    background-color:lightslategray;
+}
+.callicon{
+color: red;
+}    
+@media screen and (width <= 600px) {
+    nav{
+        display:none;
+    }
+   .icon{
+    display:inline-block;
+    } 
+     
+}
